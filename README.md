@@ -1,4 +1,5 @@
 ---------- UWAGI ----------
+
 strone przetestowałem na przeglądarkach: FF, Chrome, Edge, Opera
 nie miałem możliwości przetestowania na przeglądarce safari
 również nie testowałem strony na urządzeniu mobilnym. strona co prawda jest responsywna, ale z doświadczenia wiem, że przeglądarki na komórkach (szczególnie te wbudowane) lubią płatać figle
