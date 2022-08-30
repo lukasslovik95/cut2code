@@ -1,0 +1,146 @@
+:root {
+	--textColor: #FFF;
+	--bgColorLight: #89C6FF;
+	--bgColorDark: #3633D0;
+}
+
+/* ##### BTN ##### */
+.btn {
+	position: relative;
+	color: var(--textColor);
+	background-color: transparent;
+	border: none;
+	border-radius: 100px;
+	box-shadow: none;
+	outline: none;
+	font-size: 19px;
+	line-height: 23px;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration: none;
+	white-space: nowrap;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 55px;
+	padding: 0 32px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.btn::before {
+	content: '';
+  	position: absolute;
+  	left: 0;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+	border-radius: 26px;
+	z-index: -1;
+}
+
+/* ##### BTN.BTN-PRIMARY ##### */
+.btn.btn-primary {
+	background-image: linear-gradient(90deg, #6384ea, #3835cd);
+	background-size: 100%;
+  	background-position: 0% 0%;
+}
+
+.btn.btn-primary::before {
+	background-image: linear-gradient(90deg, #6384ea, #3835cd);
+	background-size: 100%;
+	background-position: 0% 0%;
+	filter: blur(10px);
+	opacity: 0;
+	transition: opacity 0.4s;
+}
+  
+.btn.btn-primary:hover::before {
+	opacity: 1;
+	animation: pulse 2s infinite;
+}
+
+.btn.btn-primary:active {
+	color: #c3c4d5;
+}
+
+/* ##### BTN.BTN-SECONDARY ##### */
+.btn.btn-secondary {
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #89C6FF, #3633D0);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: inset 2px 1000px 1px #335;
+}
+  
+.btn.btn-secondary:hover {
+	box-shadow: inset 2px 1000px 1px #2227;
+}
+  
+.btn.btn-secondary:hover::after {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+/* ##### BTN.SMALL ##### */
+.btn.btn-small {
+	height: 39px;
+	padding: 0 24px;
+}
+
+/* ##### ICO GO TOP ##### */
+.ico-go-top {
+	padding: 12px 0 0 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 88;
+	right: 20px;
+	bottom: 20px;
+	display: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	content: '';
+	font-size: 20px;
+	text-align: center;
+}
+
+.ico-go-top.is-bottom {
+	margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+	.btn {
+		height: 39px;
+		font-size: 15px;
+		padding: 0 22px;
+	}
+
+	.btn.btn-small {
+		height: 34px;
+		padding: 0 18px;
+	}
+
+	.ico-go-top {
+		width: 40px;
+		height: 40px;
+		padding: 7px 0 0 0;
+	}
+
+	.ico-go-top.is-bottom {
+		margin-bottom: 15px;
+	}
+}
+
+/* ##### ANIMATION ##### */
+@keyframes pulse {
+	0% {
+		filter: blur(10px);
+	}
+	50% {
+		filter: blur(15px);
+	}
+	100% {
+		filter: blur(10px);
+	}
+}

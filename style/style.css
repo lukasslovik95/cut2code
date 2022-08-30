@@ -1,0 +1,389 @@
+main {
+	flex-grow: 1;
+	padding-top: 107px;
+}
+
+.section-padding {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+/* ##### HERO SECTION ##### */
+.intro-paragraph {
+	font-family: 'Inter', sans-serif;
+	max-width: 522px;
+}
+
+.sample-nfts {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.sample-nfts > div {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border: 2px solid #fff;
+	border-radius: 7px;
+	bottom: 5.5%;
+	padding: 45px 0;
+}
+
+/* ##### NFT PICTURES SECTION ##### */
+.nft-picture {
+	position: relative;
+	margin-bottom: 115px;
+}
+
+
+div.row > div:nth-last-child(1) > .nft-picture,
+div.row > div:nth-last-child(2) > .nft-picture {
+	margin-bottom: 0;
+}
+
+.nft-picture a:not(.btn) {
+	display: block;
+	width: 90%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 45px;
+	padding-bottom: 72%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border: 2px solid #fff;
+	border-radius: 20px;
+
+}
+
+div.row > div:nth-child(odd) > .nft-picture {
+	margin-right: 35px;
+}
+
+div.row > div:nth-child(even) > .nft-picture {
+	margin-left: 35px;
+}
+
+div.row > div:nth-child(1) > .nft-picture > a {
+	background-image: url("../img/nfts/rominolegs-nft.jpg");
+}
+
+div.row > div:nth-child(2) > .nft-picture > a {
+	background-image: url("../img/nfts/hibnastiar-nft.jpg");
+}
+
+div.row > div:nth-child(3) > .nft-picture > a {
+	background-image: url("../img/nfts/senjadisini-nft.jpg");
+}
+
+div.row > div:nth-child(4) > .nft-picture > a {
+	background-image: url("../img/nfts/albertov-nft.jpg");
+}
+
+
+.nft-picture > div {
+	width: 100%;
+	padding: 15px 24px;
+	bottom: 0;
+	transform: translateY(45%);
+}
+
+/* ##### SLIDER SECTION ##### */
+.slick-slide > div:first-child {
+	position: absolute;
+	padding-bottom: 53%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 27px;
+}
+
+.slick-slide > div:nth-child(2) {
+	margin-top: 53%;
+	position: relative;
+	padding: 35px 15px 15px 15px;
+}
+
+.slick-slide.i-hibnastiar > div:first-child {
+	background-image: url('../img/profiles/hibnastiar-bg.jpg');
+}
+
+.slick-slide.i-tukirin > div:first-child {
+	background-image: url('../img/profiles/tukirin-bg.jpg');
+}
+
+.slick-slide.i-aksaraz > div:first-child {
+	background-image: url('../img/profiles/aksaraz-bg.jpg');
+}
+
+.slick-slide.i-yuk-jum > div:first-child {
+	background-image: url('../img/profiles/yuk-jum-bg.jpg');
+}
+
+.slick-slide > div:first-child:before {
+	content: '';
+	bottom: 0;
+	left: calc(50% - 40px);
+	position: absolute;
+	width: 80px;
+	height: 40px;
+	border-radius: 40px 40px 0 0;
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+}
+
+.slick-slide .i-image {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	background-size: cover;
+	background-position: center;
+}
+
+.slick-slide.i-hibnastiar .i-image {
+	background-image: url(../img/profiles/hibnastiar-avatar.jpg);
+}
+
+.slick-slide.i-tukirin .i-image {
+	background-image: url(../img/profiles/tukirin-avatar.jpg);
+}
+
+.slick-slide.i-aksaraz .i-image {
+	background-image: url(../img/profiles/aksaraz-avatar.jpg);
+}
+
+.slick-slide.i-yuk-jum .i-image {
+	background-image: url(../img/profiles/yuk-jum-avatar.jpg);
+}
+
+.slick-slide button.btn.follow-btn {
+	width: 100%;
+	border-radius: 12px;
+	margin-top: 34px;
+	text-transform: capitalize;
+}
+
+.slick-slide button.btn.follow-btn::before {
+	border-radius: 12px;
+}
+
+.slick-slide button.btn-secondary{
+	box-shadow: 2px 1000px 1px #335 inset;
+}
+
+/* ##### CONTACT SECTION ##### */
+form input[type=text] {
+	height: 55px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50px;
+	padding: 16px 24px;
+	border: none;
+	width: 100%;
+	max-width: 528px;
+	font-size: 20px;
+	line-height: 23px;
+	color: #fff;
+	transition: 0.3s;
+}
+
+form input[type=text]:hover,
+form input[type=text]:active,
+form input[type=text]:focus {
+	background: rgba(255, 255, 255, 0.15);
+}
+
+form input[type=text]::placeholder {
+	opacity: 0.5;
+}
+
+/* ##### BG SHAPES ##### */
+.bg-radial-box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.bg-radial-box div {
+	position: absolute;
+	background: radial-gradient(34.98% 34.98% at 50% 50%, #725BDA 0%, rgba(6, 19, 45, 0) 100%);
+}
+
+.bg-radial-box div:nth-of-type(1) {
+	opacity: 0.5;
+	width: 199%;
+	height: 71%;
+	top: 35%;
+	left: -20%;
+}
+
+.bg-radial-box div:nth-of-type(2) {
+	opacity: 0.5;
+	width: 102%;
+	height: 44%;
+	top: -20%;
+	left: 42%;
+}
+
+.bg-radial-box div:nth-of-type(3) {
+	opacity: 0.5;
+	width: 165%;
+	height: 72%;
+	top: -11%;
+	left: -79%;
+}
+
+.bg-radial-box div:nth-of-type(4) {
+	opacity: 0.3;
+	width: 199%;
+	height: 71%;
+	top: 7%;
+	left: -49%;
+}
+
+.bg-radial-box div:nth-of-type(5) {
+	opacity: 0.3;
+	width: 199%;
+	height: 87%;
+	top: 51%;
+	left: -98%;
+}
+
+.bg-radial-box div:nth-of-type(6) {
+	opacity: 0.3;
+	width: 199%;
+	height: 87%;
+	top: 86%;
+	left: 0;
+}
+
+.bg-radial-box div:nth-of-type(7) {
+	opacity: 0.4;
+	width: 199%;
+	height: 87%;
+	top: 96%;
+	left: -97%;
+}
+
+/* ##### RESPONSIVE WEB DESIGN ##### */
+@media (max-width: 1199px) {
+	main {
+		padding-top: 65px;
+	}
+
+	.section-padding {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.intro-paragraph {
+		margin: 0 auto;
+	}
+
+	.sample-nfts > img {
+		max-width: 70%;
+	}
+
+	div.row > div:nth-child(odd) > .nft-picture {
+		margin-right: 0;
+	}
+	
+	div.row > div:nth-child(even) > .nft-picture {
+		margin-left: 0;
+	}
+}
+
+@media all and (max-width: 991px) {
+
+	.nft-picture,
+	div.row > div:nth-last-child(2) > .nft-picture {
+		margin-bottom: 85px;
+	}
+
+	form input[type=text] {
+		height: 39px;
+		padding: 12px 18px;
+		max-width: 420px;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.section-padding {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+@media all and (max-width: 767px) {
+	form input[type=text] {
+		max-width: 340px;
+	}
+}
+
+@media all and (max-width: 575px) {
+	.sample-nfts > img {
+		max-width: 90%;
+	}
+
+	.sample-nfts > div {
+		flex-direction: column;
+		padding: 15px 0;
+		transform: translateY(40%);
+		bottom: 0;
+	}
+
+	.sample-nfts > div > img:nth-of-type(1) {
+		max-width: 170px;
+	}
+
+	.sample-nfts > div > img:nth-of-type(2) {
+		max-width: 157px;
+	}
+
+	.sample-nfts > div > img:nth-of-type(3) {
+		max-width: 138px;
+	}
+
+	form input[type=text] {
+		max-width: 100%;
+	}
+
+	.section-padding {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+@media all and (max-width: 479px) {
+
+}
+
+@media (max-width: 440px) {
+	.nft-picture,
+	div.row > div:nth-last-child(2) > .nft-picture {
+		margin-bottom: 170px;
+	}
+
+	div.row > div:nth-last-child(1) > .nft-picture {
+		margin-bottom: 140px;
+	}
+
+	.nft-picture > div {
+		flex-direction: column;
+		bottom: -75px;
+	}
+
+	.nft-picture > div > a {
+		margin-top: 20px;
+		width: 100%;
+	}
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+body {
+	font-family: RobotoFlex, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+	background-color: #000;
+	position: relative;
+}
+
+img {
+	max-width:100%;
+	vertical-align: top;
+	max-height: 100%;
+}
+
+h1 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 67px;
+	line-height: 81px;
+}
+
+h2, h3 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 59px;
+	line-height: 76px;
+}
+
+h3 {
+	font-size: 40px;
+	line-height: 52px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+@media all and (max-width: 991px) {
+	body {font-size: 14px; line-height: 24px;}
+	h1 {
+		font-size: 41px;
+		line-height: 50px;
+	}
+
+	h2 {
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+	h3 {
+		font-size: 24px;
+		line-height: 31px;
+	}
+}

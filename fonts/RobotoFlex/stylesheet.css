@@ -1,0 +1,30 @@
+:root {
+    --fontWeightRegular: 400;
+    --fontWeightMedium: 500;
+    --fontWeightSemiBold: 600;
+    --fontWeightBold: 700;
+}
+
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url('RobotoFlex.ttf');
+}
+
+.roboto-flex-400 {
+    font-family: RobotoFlex;
+    font-variation-settings: 'wght' var(--fontWeightRegular);
+}
+
+.roboto-flex-500 {
+    font-family: RobotoFlex;
+    font-variation-settings: 'wght' var(--fontWeightMedium);
+}
+
+.roboto-flex-600 {
+    font-family: RobotoFlex;
+    font-variation-settings: 'wght' var(--fontWeightSemiBold);
+}
+.roboto-flex-700 {
+    font-family: RobotoFlex;
+    font-variation-settings: 'wght' var(--fontWeightBold);
+}
